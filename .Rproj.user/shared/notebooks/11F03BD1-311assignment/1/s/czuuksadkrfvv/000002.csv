@@ -1,0 +1,8 @@
+"0","#Probability of type 1 error when p=0.6"
+"0","m.a=rep(0,times=40)"
+"0","p.a=rep(0,times=40)"
+"0","for(i in 0:40){"
+"0","  m.a[i]=i+60"
+"0","  p.a[i]=pbinom(q=100,size=100,prob=0.6)-pbinom(q=m1[i]-1,size=100,prob=0.6)"
+"0","}"
+"0","a=data.frame(m.a,p.a)"
